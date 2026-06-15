@@ -4,9 +4,9 @@
 
 import { movies } from "./db";
 
-// export async function GET() {
-//     return Response.json(movies);
-// }
+export async function GET() {
+    return Response.json(movies);
+}
 
 export async function POST(req:Request) {
     let movie = await req.json();
